@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203.assignment1.SortingHubController">
+   <children>
+      <!-- Algorithm Label -->
+      <Label layoutX="14.0" layoutY="391.0" text="Algorithm" />
+
+      <!-- Algorithm ComboBox -->
+      <ComboBox fx:id="algorithm_Combo" layoutX="78.0" layoutY="387.0" onAction="#comboPressed" prefWidth="150.0" />
+
+      <!-- Array Size Label -->
+      <Label layoutX="240.0" layoutY="391.0" text="Array Size" />
+
+      <!-- Array Size Slider -->
+      <Slider fx:id="size_Slider" layoutX="300.0" layoutY="379.0" majorTickUnit="16.0" max="128.0" min="32.0" minorTickCount="0" onMouseDragged="#sizeDragged" prefHeight="44.0" prefWidth="196.0" showTickLabels="true" showTickMarks="true" />
+
+      <!-- Sort Button -->
+      <Button fx:id="sort_Button" layoutX="567.0" layoutY="382.0" mnemonicParsing="false" onAction="#sortPressed" prefHeight="36.0" prefWidth="94.0" text="Sort" />
+
+      <!-- Reverse Button -->
+      <Button fx:id="reverse_Button" layoutX="585.0" layoutY="326.0" mnemonicParsing="false" onAction="#reversePressed" text="Reverse" />
+
+      <!-- Shuffle Button -->
+      <Button fx:id="shuffle_Button" layoutX="588.0" layoutY="271.0" mnemonicParsing="false" onAction="#shufflePressed" text="Shuffle" />
+
+      <!-- Time Delay Slider -->
+      <Slider fx:id="delay_Slider" layoutX="590.0" layoutY="107.0" majorTickUnit="100.0" max="1000.0" minorTickCount="0" onMouseDragged="#delayDragged" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+
+      <!-- Time Delay Label -->
+      <Label layoutX="585.0" layoutY="45.0" text="Time Delay" />
+
+      <!-- AnchorPane for Bars -->
+      <AnchorPane fx:id="bar_Anchor" layoutX="25.0" layoutY="20.0" opacity="0.51"
+                  prefHeight="350.0" prefWidth="550.0"
+                  style="-fx-background-color: #d3d3d3; -fx-border-color: black; -fx-border-width: 2px;" />
+
+
+
+      <!-- Size Label -->
+      <Label fx:id="size_Label" layoutX="505.0" layoutY="392.0" />
+
+      <!-- Delay Label -->
+      <Label fx:id="delay_Label" layoutX="600.0" layoutY="71.0" text="Delay" />
+
+      <!-- Milliseconds Label -->
+      <Label layoutX="639.0" layoutY="152.0" rotate="90.0" text="Milliseconds" />
+   </children>
+</AnchorPane>
